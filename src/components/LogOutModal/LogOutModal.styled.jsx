@@ -2,7 +2,7 @@ import styled from 'styled-components';
 export const ModalStyles = {
   borderRadius: '8px',
   padding: '50px',
-  backgroundColor: 'var(--accent-color)',
+  backgroundColor: 'var(--btn-background-color)',
 };
 export const BackdropStyles = {
   backgroundColor: 'rgba(0, 0, 0, 0.8)',
@@ -15,6 +15,7 @@ export const Text = styled.p`
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: -0.28px;
+  color: #f3f3f3;
   @media screen and (min-width: 768px) {
     margin-bottom: 37px;
     font-size: 18px;
@@ -43,15 +44,13 @@ export const Icon = styled.svg`
     width: 32px;
     height: 32px;
   }
-  @media screen and (min-width: 1440px) {
-  }
 `;
 export const StyledCancelBtn = styled.button`
   padding: 12px 45px;
   border: 1px solid rgba(243, 243, 243, 0.2);
   border-radius: 42px;
-  background-color: var(--hover-btn-color);
-  color: var(--text-btn-color);
+  background-color: #434d67;
+  color: #f3f3f3;
   font-size: 13px;
   font-weight: 600;
   line-height: 1.28;
@@ -61,8 +60,8 @@ export const StyledCancelBtn = styled.button`
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: var(--text-btn-color);
-    color: var(--accent-color);
+    background-color: #f3f3f3;
+    color: #434d67;
   }
   @media screen and (min-width: 768px) {
     padding: 18px 69px;
@@ -74,7 +73,7 @@ export const StyledCancelBtn = styled.button`
 `;
 export const StyledLogoutBtn = styled.button`
   padding: 12px 45px;
-  background-color: var(--text-btn-color);
+  background-color: #f3f3f3;
   color: #161f37;
   border: 1px solid rgba(243, 243, 243, 0.2);
   border-radius: 42px;

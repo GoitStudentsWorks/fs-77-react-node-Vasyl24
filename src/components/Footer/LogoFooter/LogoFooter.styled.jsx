@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import icons from '../../assets/sprite.svg';
+import icons from '../../../assets/sprite.svg';
 
 const slideInFromTop = keyframes`
   from {
@@ -38,7 +38,7 @@ export const LogoGroup = styled.div`
 export const Icon = styled.svg`
   width: 22px;
   height: 22px;
-  fill: var(--btn-color);
+  fill: white;
 
   @media screen and (min-width: 768px) {
     width: 28px;

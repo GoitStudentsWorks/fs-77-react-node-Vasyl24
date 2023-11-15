@@ -3,8 +3,12 @@ import styled, { keyframes } from 'styled-components';
 // Create a container for the footer
 export const FooterContainer = styled.footer`
   border-top: 1px solid rgba(243, 243, 243, 0.2);
+  background: #0a0a11;
 `;
 
+export const LogoContainer = styled.div`
+  color: white;
+`;
 export const FooterWrap = styled.div`
   padding: 40px 20px 18px;
 
@@ -23,9 +27,11 @@ export const FooterWrap = styled.div`
 
 // Create a flex container
 export const FlexContainer = styled.div`
+  position: relative;
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
+  z-index: 12;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -53,11 +59,13 @@ export const FooterGroup = styled.div`
 `;
 
 export const FooterInfo = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 8px;
+  z-index: 12;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -138,12 +146,12 @@ export const FooterFirstBall = styled.div`
 export const FooterSecondBall = styled.div`
   position: absolute;
   width: 700px;
-  height: 350px;
+  height: 320px;
   border-radius: 350px 350px 0 0;
   background: rgba(188, 230, 210, 1);
   filter: blur(104.8543701171875px);
   animation: ${footerAnimation} 8s ease-in-out infinite;
-  z-index: -11;
+  z-index: 11;
    transform: translateY(-320px); 
 
    @media (max-width: 768px) {
@@ -166,12 +174,12 @@ export const FooterSecondBall = styled.div`
 export const FooterThirdBall = styled.div`
   position: absolute;
   width: 700px;
-  height: 350px;
+  height: 320px;
   border-radius: 350px 350px 0 0;
   background: rgba(64, 112, 205, 1);
   filter: blur(104.8543701171875px);
   animation: ${footerAnimation} 8s ease-in-out infinite 2s;
-  z-index: -11;
+  z-index: 11;
    transform: translateY(-320px);
    
    @media (max-width: 768px) {

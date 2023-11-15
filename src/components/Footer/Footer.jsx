@@ -1,6 +1,5 @@
 import React from 'react';
-import Logo from '../../components/Logo/Logo';
-import SocialLinks from './SocialLinks/SocialLinks';
+import Logo from '../Footer/LogoFooter/LogoFooter';
 import { Nav } from './Nav/Nav';
 import EmailSubscription from './EmailSubscription/EmailSubscription';
 import {
@@ -15,7 +14,9 @@ import {
   FooterFirstBall,
   FooterSecondBall,
   FooterThirdBall,
+  LogoContainer,
 } from './Footer.styled';
+import FooterSocialLinks from './FooterSocialLinks/FooterSocialLinks';
 
 function Footer() {
   return (
@@ -24,8 +25,10 @@ function Footer() {
         <FlexContainer>
           <FooterGroup>
             <div>
-              <Logo />
-              <SocialLinks />
+              <LogoContainer>
+                <Logo />
+              </LogoContainer>
+              <FooterSocialLinks />
             </div>
             <Nav />
           </FooterGroup>
@@ -55,13 +58,13 @@ function Footer() {
               </a>
             </FooterTextButton>
           </div>
-          <FooterFirstBallContainer>
-            <FooterFirstBall />
-          </FooterFirstBallContainer>
-          <FooterSecondBall />
-          <FooterThirdBall />
         </FooterInfo>
       </FooterWrap>
+      <FooterFirstBallContainer>
+        <FooterFirstBall />
+      </FooterFirstBallContainer>
+      <FooterSecondBall />
+      <FooterThirdBall />
     </FooterContainer>
   );
 }
